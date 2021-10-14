@@ -13,14 +13,13 @@ let vm = new Vue({
   el: "#app",
   data() {
     return {
-      name: "张三",
-      age: 11
+      name: [{a:1}, {b: 2}]
     }
   },
   computted() {},
   watch() {}
 })
-vm._data.age = "xxx"
+vm._data.name.push({name: 2})
 console.log(vm._data)
 </script>
 </body>
