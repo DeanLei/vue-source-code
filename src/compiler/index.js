@@ -87,5 +87,6 @@ export function compileToFunction(template) {
   // let renderFn = new Function();
   let renderFn = new Function(`with(this) { return ${code}}`);
   console.log(renderFn)
+  // vue的rnder 他返回的是虚拟dom
   return renderFn
 } 

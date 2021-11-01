@@ -37,5 +37,6 @@ export function initMixin(Vue) {
       // 我们需要将template转化成render方法
     }
     // options.render
+    console.log(options.render)
   }
 }
